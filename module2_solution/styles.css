@@ -1,0 +1,145 @@
+h1 {
+  position: relative;
+  text-align: center;
+  color: rgb(60, 60, 60);
+  margin-bottom: 30px;
+}
+
+p {
+  border: 5px solid rgb(255, 34, 34);
+  background-color: rgb(255, 97, 97);
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  padding-top: 60px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+/* Large desktop (lg) */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+/* Medium desktop (md) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-md-12 {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Small desktop / Tablet (sm) */
+@media (min-width: 1px) and (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Mobile (xs) */
+@media (max-width: 399px) {
+  .col-xs-12 {
+    width: 100%;
+    clear: both;
+  }
+}
+
+.box-container1 {
+  position: relative;
+}
+
+.box1 {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  right: 8px;
+  color: aqua;
+}
+
+.text1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(193, 255, 77);
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+}
+
+.box-container2 {
+  position: relative;
+}
+
+.box2 {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  right: 8px;
+  color: aqua;
+}
+
+.text2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 34, 137);
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+}
+
+.box-container3 {
+  position: relative;
+}
+
+.box3 {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  right: 8px;
+  color: aqua;
+}
+
+.text3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(76, 231, 255);
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+}
