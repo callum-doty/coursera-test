@@ -1,201 +1,156 @@
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #505050;
-  font-family: 'Oxygen', sans-serif;
+  color: rgba(34, 33, 33, 0.884);
+  background-color: white;
+  font-family: pointsoft;
 }
 
-/** HEADER **/
-#header-nav {
-  background-color: #c1c1c1;
-  border-radius: 0;
-  border: 0;
-  height: 125px;
-}
-
-.menutext {
-  align-content: center;
-  padding: 20px 20px;
+.text-center {
   text-align: center;
 }
 
-
-.navbar-brand {
-  padding-top: 50px;
+.navbar {
+  background-color: #ff5e5e;
+  border-radius: 0;
+  border: 1px;
+  height: 100px;
+  margin-bottom: 0;
 }
-.navbar-brand h1 { /* Restaurant name */
-  font-family: sans-serif;
-  color: #363636;
+
+.navbar-brand h1 {
+  font-family: pointsoft;
+  color: black;
   font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: -5px;
-  margin-bottom: 25px;
-  margin-left: 10%;
+  margin: 40px;
+  line-height: 0.75;
 }
 
-
-
-
-
-/* FOOTER */
-.panel-footer {
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: #222;
-  border-top: 0;
-}
-.panel-footer div.row {
-  margin-bottom: 35px;
-}
-#hours, #address {
-  line-height: 2;
-}
-#hours > span, #address > span {
-  font-size: 1.3em;
-}
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-#testimonials {
-  font-style: italic;
-}
-#testimonials p:nth-child(2) {
-  margin-top: 25px;
-}
-/* END FOOTER */
-
-
-
-/* HOME PAGE */
-
-.box-container3 {
-  position: relative;
-  background-color: rgb(213, 213, 213);
-  padding: 3px; /* Adjust the padding as needed */
-}
-
-.box-container3 p {
-  position: relative;
-  background-color: rgb(213, 213, 213);
-  padding: 3px; /* Adjust the padding as needed */
-}
-.box3 {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box3 h1 {
-  margin: 0;
-  align-content: center;
-}
-
-
-
-
-.chicken-box, .beef-box, .sushi-box {
-  background-color: #ffffff;
-  border: 5px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 78%;
-  height: 200px;
-  align-content: center;
-  margin: auto;
-  margin-bottom: 15px;
-  margin-right: 10%;
-  margin-left: 10%;
-  overflow: hidden;
-  
-}
-
-.chicken-box, .beef-box, .sushi-box h1 {
-  color: #333;
-  padding-bottom: 15px;
-}
-
-.chicken-box p, .beef-box p, .sushi-box p {
-  color: #666;
-  padding-top: 15px;
-}
-
-.box {
-  border: #222;
-  align-content: center;
-}
-
-
-
-/* Add the following CSS for the hamburger menu */
-
-/* Hamburger Menu */
-.menu-toggle {
-  display: none; /* Initially hide for larger screens */
-  cursor: pointer;
-  font-size: 5em;
-  float: right;
-  margin-top: -95px;
-  padding-right: 6%;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  float: right;
-  margin-top: -50px;
-  margin-right: 8%;
-}
-
-.nav-list li {
-  margin-right: 20px;
-}
-
-.nav-list a {
+.navbar-brand a:hover,
+.navbar-brand a:focus {
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+  color: aquamarine;
 }
 
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Show the hamburger icon for small screens */
+.navbar-collapse {
+  width: 100%;
+  float: right;
+}
+
+.navbar-toggle {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: -15px 40px;
+}
+
+.navbar-toggle .fas.fa-bars {
+  position: relative;
+  top: 12px; /* Adjust the vertical position as needed */
+  left: 0; /* Adjust the horizontal position as needed */
+}
+
+#navbar-collapse {
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav li {
+  text-align: center;
+  align-content: center;
+  align-self: flex-start;
+}
+
+.navbar-nav a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.navbar-nav a:hover {
+  background: rgb(129, 255, 87);
+}
+
+
+@media only screen and (min-width: 769px) {
+  .navbar-toggle {
+    display: none; /* Hide the navbar-toggle for larger screens */
   }
 
-  .nav-list {
-    display: none; /* Hide the regular menu for small screens */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-nav li {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .navbar-nav {
+    display: block;
     text-align: center;
   }
 
-  .nav-list.show {
-    display: flex; /* Show the menu when the hamburger is clicked */
-  }
-
-  .box, .chicken-box, .beef-box, .sushi-box {
+  .navbar-nav li {
+    display: block;
     margin: 10px;
+    width: 100%;
+    border: 1px black;
+    text-align: center;
+    align-content: center;
+  }
+}
+  
+  .navbar-nav {
+    display: block;
+    text-align: center;
+    border: 1px black;
   }
 
-  .chicken-box, .beef-box, .sushi-box {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 15px;
+  .navbar-nav li {
+    display: block;
+    margin: 10px 0;
+    border: 1px black;
   }
 
-  .menu-toggle.open {
-    color: #ff6600;
-  }
 
+
+#page-title {
+  font-weight: bold;
+  margin-top: 50px; /* Adjust the value as needed */
+  margin-bottom: 30px;
+}
+
+#main-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-background {
+  height: auto;
+  padding: 20px;
+  background-color: #999999;
+  overflow: hidden;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
